@@ -8,9 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDataSource {
 
+    //Declare array here
+    
     @IBOutlet var firstTabLabel: UILabel!
+    @IBOutlet var tableView: UITableView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +23,16 @@ class ViewController: UIViewController {
         //Navigation Title
         self.navigationItem.title = "Down town Eats"
         
+    }
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1;
+    }
+    
+    func tableView(_ tableView: UITableView, numberofRowsInSectioon section: Int) -> Int {
+        
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
     }
 
