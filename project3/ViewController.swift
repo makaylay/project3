@@ -18,6 +18,8 @@ class ViewController: UIViewController {
         
         //Navigation Title
         self.navigationItem.title = "Down town Eats"
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

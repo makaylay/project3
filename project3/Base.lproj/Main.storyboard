@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="oKr-eF-CbB">
             <objects>
-                <viewController id="Kfw-O7-SET" sceneMemberID="viewController">
+                <viewController id="Kfw-O7-SET" customClass="secondViewController" customModule="project3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mog-sV-Neo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,6 +21,9 @@
                         <viewLayoutGuide key="safeArea" id="ek6-hA-IqF"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ftw-5g-GXL"/>
+                    <connections>
+                        <outlet property="SecondTabLabel" destination="Mog-sV-Neo" id="Tt3-7H-dqi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fQf-U6-kxN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -63,11 +66,11 @@
             </objects>
             <point key="canvasLocation" x="-351" y="18"/>
         </scene>
-        <!--Item 1-->
+        <!--Eats-->
         <scene sceneID="vFw-8L-V6M">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7oF-nv-jyi" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="A8j-0S-ujR"/>
+                    <tabBarItem key="tabBarItem" title="Eats" selectedImage="restaurant" id="A8j-0S-ujR"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8b6-Sq-UKq">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
@@ -82,11 +85,11 @@
             </objects>
             <point key="canvasLocation" x="600" y="-314.84257871064472"/>
         </scene>
-        <!--Item 2-->
+        <!--map-->
         <scene sceneID="0ET-Du-vHG">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1jz-Kw-XDw" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="h6f-4Z-Upg"/>
+                    <tabBarItem key="tabBarItem" title="map" selectedImage="map_marker" id="h6f-4Z-Upg"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OZz-nU-A6B">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
@@ -102,4 +105,8 @@
             <point key="canvasLocation" x="600" y="349.92503748125938"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="map_marker" width="30" height="30"/>
+        <image name="restaurant" width="30" height="30"/>
+    </resources>
 </document>
