@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     //Declare array here
@@ -43,6 +44,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Ono Grindz for try in Kaka'ako"
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
