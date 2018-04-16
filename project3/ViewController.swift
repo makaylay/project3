@@ -13,6 +13,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     //Declare array here
     var kakaakoRestaurantsArray = ["Egghead Cafe", "Honolulu Beerworks","Morning Brew", "Moku Kitchen", "ARVO", "Highway Inn"]
     var restaurantImageData = [String]()
+    var restaurantDescription = [String]()
+    var restaurantName = [String]()
     
     @IBOutlet var firstTabLabel: UILabel!
     @IBOutlet var tableView: UITableView!
@@ -30,8 +32,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let path = Bundle.main.path(forResource: "Property List", ofType: "plist")
         let dict = NSDictionary(contentsOfFile: path!)
         
-        //access images from dictionary from Property
+        //access arrays from dictionary from Property
         restaurantImageData = dict!.object(forKey: "restaurantImages") as! [String]
+        restaurantDescription = dict!.object(forKey: "restaurantDescriptions") as! [String]
+        restaurantName = dict!.object(forKey: "restaurantNames") as! [String]
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -45,6 +50,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return restaurantImageData.count
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -55,6 +61,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.textLabel?.text = text
         
         return cell
+        
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -67,6 +74,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             let s1 = segue.destination as! detailViewController
             let imageIndex = tableView.indexPathForSelectedRow?.row
             s1.imagePass = restaurantImageData[imageIndex!]
+            s1.textPass = restaurantDescription[imageIndex!]
+            
         }
     }
     

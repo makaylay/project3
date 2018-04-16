@@ -2,6 +2,24 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>restaurantNames</key>
+	<array>
+		<string>Egghead Cafe</string>
+		<string>Honolulu Beer Works</string>
+		<string>Morning Brew Cafe</string>
+		<string>Moku Kitchen</string>
+		<string>ARVO Cafe</string>
+		<string>Highway Inn</string>
+	</array>
+	<key>restaurantDescriptions</key>
+	<array>
+		<string>Modern breakfast cafe for classic omelettes, pancakes &amp; coffee, plus signature Taiwanese specials.</string>
+		<string>Hip, warehouselike microbrewery with various ales &amp; stouts, plus classic &amp; island-style pub grub.</string>
+		<string>Morning Brew Coffee &amp; Bistro located in Kailua &amp; Kakaako offers a wide variety of coffee, baked goods, and healthy dishes to start any day.</string>
+		<string>Cool, creative eatery serving locally sourced, modern American fare &amp; cocktails, plus live music.</string>
+		<string>Hip, plant-filled coffee shop offering light fare such as toast with unique toppings.</string>
+		<string>Family-friendly, no-frills spot dishing up an all-day menu of traditional Hawaiian fare.</string>
+	</array>
 	<key>restaurantImages</key>
 	<array>
 		<string>egghead</string>
