@@ -17,17 +17,23 @@
                     <view key="view" contentMode="scaleToFill" id="Mog-sV-Neo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gli-qv-K76">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ek6-hA-IqF"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ftw-5g-GXL"/>
                     <connections>
-                        <outlet property="SecondTabLabel" destination="Mog-sV-Neo" id="Tt3-7H-dqi"/>
+                        <outlet property="mapView" destination="gli-qv-K76" id="hNU-Bg-j6T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fQf-U6-kxN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1438" y="363"/>
+            <point key="canvasLocation" x="1436.25" y="362.32394366197184"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="maz-lL-pG8">

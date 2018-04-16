@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import MapKit
 
 class secondViewController: UIViewController {
 
-    @IBOutlet var SecondTabLabel: UILabel!
+    @IBOutlet var mapView: MKMapView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -21,6 +21,9 @@ class detailViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+          self.view.backgroundColor = UIColor.blue
+        
         if let imageName = imagePass {
             imageView.image = UIImage(named: imageName)
         }

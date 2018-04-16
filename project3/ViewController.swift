@@ -26,8 +26,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        //Navigation Title
+        
         self.navigationItem.title = "Kaka'ako Eats"
+        
         
         let path = Bundle.main.path(forResource: "Property List", ofType: "plist")
         let dict = NSDictionary(contentsOfFile: path!)
@@ -54,6 +55,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+          
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellResuseIdentifier")!
         
         let text = kakaakoRestaurantsArray[indexPath.row]
@@ -61,6 +63,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.textLabel?.text = text
         
         return cell
+        
         
     }
     
