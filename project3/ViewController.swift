@@ -32,7 +32,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let path = Bundle.main.path(forResource: "Property List", ofType: "plist")
         let dict = NSDictionary(contentsOfFile: path!)
         
-        //access arrays from dictionary from Property
+        //access arrays from dictionary from PList
         restaurantImageData = dict!.object(forKey: "restaurantImages") as! [String]
         restaurantDescription = dict!.object(forKey: "restaurantDescriptions") as! [String]
         restaurantName = dict!.object(forKey: "restaurantNames") as! [String]
@@ -75,7 +75,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             let imageIndex = tableView.indexPathForSelectedRow?.row
             s1.imagePass = restaurantImageData[imageIndex!]
             s1.textPass = restaurantDescription[imageIndex!]
-            
+            s1.titlePass = restaurantName[imageIndex!]
         }
     }
     
