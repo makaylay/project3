@@ -15,12 +15,15 @@ class secondViewController: UIViewController {
     @IBOutlet var mapView: MKMapView!
     
     //initial location
-    let initialLocation = CLLocation(latitude: 21.298342, longitude: -157.860581 )
-    let regionRadius: CLLocationDistance = 1000
+    let initialLocation = CLLocation(latitude: 21.298149, longitude: -157.861009 )
+    let regionRadius: CLLocationDistance = 170
     
-    let eggheadCafe = CLLocation(latitude: 21.298611, longitude: -157.855004)
-    let hnlBrew = CLLocation(latitude: 21.297416, longitude: -157.860066)
-    let morningBrew = CLLocation(latitude: 21.298345, longitude: -157.860464)
+    let BarHnl = CLLocation(latitude: 21.298263, longitude: -157.860907)
+    let hnlBrew = CLLocation(latitude: 21.297140, longitude: -157.860370)
+    let morningBrew = CLLocation(latitude: 21.298168, longitude: -157.860700)
+    let mokuKitch = CLLocation(latitude: 21.298255, longitude: -157.861692)
+    let arvo = CLLocation(latitude: 21.298645, longitude: -157.861189)
+    let highway = CLLocation(latitude: 21.297708, longitude: -157.861357)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,13 +34,18 @@ class secondViewController: UIViewController {
         
         centerMapOnLocation(location: initialLocation)
         
-        let eggheadCafe = Restaurant(title: "Egghead Cafe", type: "Breakfast", coordinate: CLLocationCoordinate2D(latitude: 21.298611, longitude: -157.855004))
-            mapView.addAnnotation(eggheadCafe)
-        let hnlBrew = Restaurant(title: "Honolulu Beer Works", type: "Brewpub", coordinate: CLLocationCoordinate2D(latitude: 21.297416, longitude: -157.860066))
+        let BarHnl = Restaurant(title: "9Bar HNL", type: "Coffee Shop", coordinate: CLLocationCoordinate2D(latitude: 21.298263, longitude: -157.860907))
+            mapView.addAnnotation(BarHnl)
+        let hnlBrew = Restaurant(title: "Honolulu Beer Works", type: "Brewpub", coordinate: CLLocationCoordinate2D(latitude: 21.297140, longitude: -157.860370))
             mapView.addAnnotation(hnlBrew)
-        let morningBrew = Restaurant(title: "Morning Brew", type: "Cafe", coordinate: CLLocationCoordinate2D(latitude: 21.298345, longitude: -157.860464))
+        let morningBrew = Restaurant(title: "Morning Brew", type: "Cafe", coordinate: CLLocationCoordinate2D(latitude: 21.298168, longitude: -157.860700))
             mapView.addAnnotation(morningBrew)
-        
+        let mokuKitch = Restaurant(title: "Moku Kitchen", type: "America", coordinate: CLLocationCoordinate2D(latitude: 21.298255, longitude: -157.861692))
+            mapView.addAnnotation(mokuKitch)
+        let arvo = Restaurant(title: "Arvo Cafe", type: "Coffee Shop", coordinate: CLLocationCoordinate2D(latitude: 21.298645, longitude: -157.861189))
+            mapView.addAnnotation(arvo)
+        let highway = Restaurant(title: "Highway Inn", type: "Hawaiian food", coordinate: CLLocationCoordinate2D(latitude:21.297708, longitude: -157.861357))
+            mapView.addAnnotation(highway)
         
         
     }

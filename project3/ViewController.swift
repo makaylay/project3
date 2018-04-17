@@ -12,7 +12,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     //Declare array here
-    var kakaakoRestaurantsArray = ["Egghead Cafe", "Honolulu Beerworks","Morning Brew", "Moku Kitchen", "ARVO", "Highway Inn"]
+    var kakaakoRestaurantsArray = ["9Bar Honolulu", "Honolulu Beerworks","Morning Brew", "Moku Kitchen", "ARVO", "Highway Inn"]
     var restaurantImageData = [String]()
     var restaurantDescription = [String]()
     var restaurantName = [String]()

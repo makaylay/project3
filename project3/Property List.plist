@@ -4,7 +4,7 @@
 <dict>
 	<key>restaurantNames</key>
 	<array>
-		<string>Egghead Cafe</string>
+		<string>9Bar HNL</string>
 		<string>Honolulu Beer Works</string>
 		<string>Morning Brew Cafe</string>
 		<string>Moku Kitchen</string>
@@ -13,7 +13,7 @@
 	</array>
 	<key>restaurantDescriptions</key>
 	<array>
-		<string>Modern breakfast cafe for classic omelettes, pancakes &amp; coffee, plus signature Taiwanese specials.</string>
+		<string>The perfect shot of espresso is pulled with 9-bars of pressure. This is the concept behind the name, 9Bar HNL. 9Bar is a specialty coffee shop with a modern industrial atmosphere that is run by passionate coffee lovers and foodies.</string>
 		<string>Hip, warehouselike microbrewery with various ales &amp; stouts, plus classic &amp; island-style pub grub.</string>
 		<string>Morning Brew Coffee &amp; Bistro located in Kailua &amp; Kakaako offers a wide variety of coffee, baked goods, and healthy dishes to start any day.</string>
 		<string>Cool, creative eatery serving locally sourced, modern American fare &amp; cocktails, plus live music.</string>
@@ -22,7 +22,7 @@
 	</array>
 	<key>restaurantImages</key>
 	<array>
-		<string>egghead</string>
+		<string>9bar</string>
 		<string>hnlBeer</string>
 		<string>morningBrew</string>
 		<string>moku</string>
